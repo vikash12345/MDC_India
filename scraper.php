@@ -63,7 +63,7 @@
 	   
 	   // walk through the dom and extract doctor information
 	   $info['doc_name'] = $dom->find('span[id=Name]')->plaintext;
-	   print_r($info);
+	   print_r($dom);
 	  /* $info['doc_fname'] = $dom->find('span[id="FatherName"]')->plaintext;
 	   $info['doc_dob'] = $dom->find('span[id="DOB"]')->plaintext;
 	   $info['doc_infoyear'] = $dom->find('span[id="lbl_Info"]')->plaintext;
