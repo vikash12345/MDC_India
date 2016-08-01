@@ -73,7 +73,7 @@
 	   $info['doc_qualyear'] = $dom->find('span[id="QualYear"]')->plaintext;
 	   $info['doc_univ'] = $dom->find('span[id="Univ"]')->plaintext;
 	   $info['doc_address'] = $dom->find('span[id="Address"]')->plaintext;
-	 scraperwiki::save_sqlite(array('mci_snum','registration_number'), 
+	 scraperwiki::save_sqlite(array('mci_snum','registration_number','name', 'fathers_name','date_of_birth','information_year', 'date_of_reg','council','qualifications','qualification_year','permanent_address'), 
 	    array('mci_snum' => $id, 
 	          'name' => (trim($info['doc_name'])), 
 	          'fathers_name' => (trim($info['doc_fname'])),
@@ -85,7 +85,6 @@
 	          'qualifications' => (trim($info['doc_qual'])),
 	          'qualification_year' => (trim($info['doc_qualyear'])),
 	          'permanent_address' => (trim($info['doc_address']))
-	    print_r(mci_snum);
 	    ));
 	    */
 	  //clean out the dom
