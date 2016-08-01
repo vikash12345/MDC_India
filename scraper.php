@@ -63,7 +63,7 @@
 	   
 	   // walk through the dom and extract doctor information
 	   $info['doc_name'] = $dom->find('span[id=Name]')->plaintext;
-	   $info['doc_fname'] = $dom->find('span[id="FatherName"]')->plaintext;
+	  /* $info['doc_fname'] = $dom->find('span[id="FatherName"]')->plaintext;
 	   $info['doc_dob'] = $dom->find('span[id="DOB"]')->plaintext;
 	   $info['doc_infoyear'] = $dom->find('span[id="lbl_Info"]')->plaintext;
 	   $info['doc_regnum'] = $dom->find('span[id="Regis_no"]')->plaintext;
@@ -86,9 +86,9 @@
 	          'qualification_year' => (trim($info['doc_qualyear'])),
 	          'permanent_address' => (trim($info['doc_address']))
 	    ));
-	    
+	    */
 	  //clean out the dom
-	  $dom->__destruct();
+//	  $dom->__destruct();
 	}
 	?>
 
