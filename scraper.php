@@ -53,7 +53,7 @@
 	//
 	$MAX_ID = 3; //set based on required maximum numbers
 	/** looping over list of ids of doctors **/
-	for($id = 1; $id <= $MAX_ID; $id++)
+	for($id = 1; $i <= $MAX_ID; $id++)
 	{
 	  // // Read in a MCI doctor page
 	    $html = scraperwiki::scrape("http://www.mciindia.org/ViewDetails.aspx?ID=".$id);
@@ -63,6 +63,7 @@
 	   
 	   // walk through the dom and extract doctor information
 	   $info['doc_name'] = $dom->find('span[id=Name]')->plaintext;
+	   print_r($info);
 	  /* $info['doc_fname'] = $dom->find('span[id="FatherName"]')->plaintext;
 	   $info['doc_dob'] = $dom->find('span[id="DOB"]')->plaintext;
 	   $info['doc_infoyear'] = $dom->find('span[id="lbl_Info"]')->plaintext;
