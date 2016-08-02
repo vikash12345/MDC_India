@@ -86,7 +86,7 @@
 	          'qualification_year' => (trim($info['doc_qualyear'])),
 	          'permanent_address' => (trim($info['doc_address']))
 	    ));
-	    */
+	   
 	  //clean out the dom
 	  $dom->__destruct();
 	}
